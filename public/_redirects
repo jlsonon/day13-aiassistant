@@ -1,0 +1,2 @@
+# Proxy all routes to your deployed Gradio app (replace the placeholder URL)
+/* https://YOUR_BACKEND_URL/:splat 200!

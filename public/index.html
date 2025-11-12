@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GroqAI Research Companion (Frontend)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🧠 GroqAI Research Companion</h1>
+  <p>This static frontend is served by Netlify. Backend interactions are proxied to an external Python/Gradio deployment via redirects.</p>
+  <div class="notice">
+    <strong>Setup required:</strong> Replace <code>YOUR_BACKEND_URL</code> in <code>public/_redirects</code> and <code>netlify.toml</code> before deploying.
+  </div>
+  <section>
+    <h2>Why this approach?</h2>
+    <ul>
+      <li>Netlify does not natively run persistent Python servers like Gradio.</li>
+      <li>We host the interactive Python app elsewhere (Render, HuggingFace Spaces, Railway, Fly.io).</li>
+      <li>Netlify provides fast global CDN delivery for the static assets.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Next Steps</h2>
+    <ol>
+      <li>Deploy your Python <code>app.py</code> (Gradio) to an appropriate host.</li>
+      <li>Update redirect target to that URL.</li>
+      <li>Commit & push; connect repo to Netlify; deploy.</li>
+    </ol>
+  </section>
+  <footer>
+    <small>© 2025 GroqAI Research Companion</small>
+  </footer>
+</body>
+</html>

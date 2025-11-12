@@ -1,0 +1,14 @@
+[build]
+  # This is a static deploy. Netlify will publish the files under the "public" folder.
+  publish = "public"
+
+# Uncomment the redirect below and replace YOUR_BACKEND_URL with your deployed Gradio app URL
+# (e.g., a Hugging Face Spaces URL like https://huggingface.co/spaces/<owner>/<space-name>)
+# You can also use a Render/Railway/Fly.io URL.
+#
+# [[redirects]]
+#   from = "/*"
+#   to = "https://YOUR_BACKEND_URL/:splat"
+#   status = 200
+#   force = true
+#   headers = { X-Forwarded-Host = ":host" }
