@@ -1,0 +1,50 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# OS / Editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Test & cache
+.pytest_cache/
+.cache/
+
+# Logs & exports
+logs/
+*.log
+
+# Gradio internal certs/cache
+.gradio/
+
+# Environment & secrets
+.env
+.env.*
+.groq_api_key
+
+# Generated markdown exports
+research_*.md
+summary_*.md
+export_*.md
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node (if added later)
+node_modules/
+
+# Coverage / reports
+htmlcov/
+.coverage*
+
